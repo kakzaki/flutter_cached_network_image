@@ -132,7 +132,7 @@ class ImageLoader implements platform.ImageLoader {
       scheduleMicrotask(() {
         evictImage();
       });
-      rethrow;
+     
     } finally {
       await chunkEvents.close();
     }
